@@ -1,12 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Éloïse Matteau">
+    <title>À la manière de</title>
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="images/flavicon.png">
 </head>
 <body>
-    
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__liste">
+                <li class="nav__item">
+                    <a class="nav__lien" href="../index.html"><img class="menu__img" src="images/" alt="logo"></a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__lien" href="#">Articles</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__lien" href="#">Blog</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__lien" href="#">Ressources</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__lien" href="#">À propos</a>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="titre">À la manière de Jean-Charles Debroize</h1>
+    </header>
+<main>
+    <h2 class="sous-titre">Les photomanipulations originales de Jean-Charles Debroize</h2>
+    <p class="texte">Jean-Charles Debroize est directeur de création chez Kerozen à Rennes,
+        en France. Découvert grâce à son projet de typographie « humaine » qui avait connu
+        un grand succès en 2013, Jean-Charles Debroize excelle en photomanipulation en imaginant
+        à des créations saisissantes de réalisme. Ses travaux réalisés pour la suite Adobe Creative
+        Cloud connaissent un succès retentissant. La poésie des images et leur qualité artistique sait
+        mettre en valeur le potentiel créatif des produits Adobe, mais plus que tout, fait valoir
+        l’immense talent de cet artiste!</p>
+    <section class="photomontage">
+    <h3 class="section__h3">Passionné d’illustration</h3>
+        <figure class="figure">
+            <img class="figure__img" src="https://via.placeholder.com/600x380.png">
+            <figcaption class="figure__figcaption">Image « Illustration de ballons sur
+                le concept de l’élévation », © Debroize (1)</figcaption>
+        </figure>
+        <p class="texte">Passionné par le dessin depuis son plus jeune âge, Debroize intègre en 2003
+            une école d’arts appliqués à Rennes en France avec l’ambition de devenir illustrateur.
+            Au contact des élèves et des professeurs, il découvre la retouche numérique et commence
+            à créer des œuvres superposant habilement photos et illustrations.
+        </p>
+    </section>
+    <section class="photomontage">
+        <h3 class="section__h3">Expert en photomontage</h3>
+        <figure class="figure">
+            <img class="figure__img" src="https://via.placeholder.com/600x380.png">
+            <figcaption class="figure__figcaption">Image « Enfant pilotant un oiseau» © Debroize, 2016 (2)</figcaption>
+        </figure>
+        <p class="texte">Progressivement Debroize se perfectionne sur les logiciels de retouche d’images et développe
+            un style bien à lui. Il rejoint le studio Kerozen en tant que Directeur Artistique. Cette petite agence
+            Rennaise de 4 créatifs a toujours eu la volonté de créer des images surprenantes, drôles, poétiques ou
+            terrifiantes pour lesquelles la maitrise du photomontage est primordiale.
+        </p>
+    </section>
+    <section class="photomontage">
+        <h3 class="section__h3">Une inspiration pour les novices</h3>
+        <figure class="figure">
+            <img class="figure__img" src="https://via.placeholder.com/600x380.png">
+            <figcaption class="figure__figcaption">Image « Jeune fille chevauchant un ours »,  © Debroize, 2017 (3)</figcaption>
+        </figure>
+        <p class="texte">Chaque année, Debroize inspire jeunes et moins jeunes à réaliser des photomontages des
+            plus diversifiés. Son style parfois juvénile, parfois éditorialiste ou fantastique est une source
+            d’inspiration inépuisable. Quelques-uns des travaux étudiants peuvent être retrouvés sur le site
+            du programme Techniques d’intégration multimédia du Cégep de Sainte-Foy(https://timcsf.ca/), collège
+            francophone basé au Québec, Canada.
+        </p>
+    </section>
+    <section class="apprendre-plus">
+        <h2 class="apprendre-plus__h2">Découvrez-en plus sur cet artiste</h2>
+        <ul>
+            <li><a class="reseaux__lien" href="https://www.behance.net/jcdebroizea877">Behance</a></li>
+            <li><a class="reseaux__lien" href="http://designspartan.com/presentation/les-photomanipulations-originales-de-jean-charles-debroize/">Design Spartan</a></li>
+            <li><a class="reseaux__lien" href="http://www.studio-kerozen.com/">Studio Kerozen</a></li>
+        </ul>
+    </section>
+    <section class="abonnez-vous">
+        <form class="infolettre__form" method="post" action="traitement.php" id="abonnement">
+            <h2 class="abonnez-vous__h2">Abonnez-vous à l'infolettre</h2>
+            <p class="texte">Une excellente manière de découvrir un artiste du domaine numérique, chaque semaine!
+                Inscrivez votre adresse courriel (champ de ·saisie) / M’abonner (bouton de soumission du formulaire)</p>
+            <input class="infolettre__courriel" type="email" id="courriel" value="Inscrire votre courriel" onFocus="javascript:this.value=''">
+            <input class="infolettre__bouton" type="submit" value="Envoyer">
+        </form>
+    </section>
+</main>
+<footer>
+    <nav class="nav-footer">
+        <ul class="nav-footer__liste">
+            <li class="nav-footer__item">
+                <a class="nav-footer__lien" href="../index.html"><img class="menu__img" src="images/" alt="logo"></a>
+            </li>
+            <li class="nav-footer__item">
+                <a class="nav-footer__lien" href="#">Articles</a>
+            </li>
+            <li class="nav-footer__item">
+                <a class="nav-footer__lien" href="#">Blog</a>
+            </li>
+            <li class="nav-footer__item">
+                <a class="nav-footer__lien" href="#">Ressources</a>
+            </li>
+            <li class="nav-footer__item">
+                <a class="nav-footer__lien" href="#">À propos</a>
+            </li>
+        </ul>
+    </nav>
+    <p class="footer__p">
+        <small class="footer__copyright">Tous droits réservés, © Projet en Techniques d’intégration multimédia
+            (timcsf.ca), Cégep de Sainte-Foy.</small>
+    </p>
+</footer>
 </body>
 </html>
