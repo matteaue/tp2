@@ -4,21 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
     <meta name="author" content="Éloïse Matteau">
-    <title>À la manière de</title>
+    <title>À la manière de - Jean-Charles Debroize</title>
     <link href="../css/style.css" rel="stylesheet" type="text/css">
     <link href="../css/normalize.css" rel="stylesheet" type="text/css">
-    <link rel="icon" type="image/png" href="images/flavicon.png">
 </head>
 <body>
+    <div class="layout-page">
     <header class="header">
-        <nav class="nav">
-            <ul class="nav__liste">
-                <li class="nav__item">
-                    <a class="nav__lien" href="../index.html"><img class="menu__img" src="images/" alt="logo"></a>
-                </li>
+        <nav class="nav nav--header">
+                    <a class="logo" href="../index.html"><img class="menu__img" src="images/" alt="logo"></a>
+                <ul class="nav__list nav__list--sublist">
                 <li class="nav__item">
                     <a class="nav__lien" href="#">Articles</a>
                 </li>
@@ -33,35 +29,40 @@
                 </li>
             </ul>
         </nav>
-        <h1 class="titre">À la manière de Jean-Charles Debroize</h1>
+        <picture class="picture">
+            <source srcset="images/photo-montage_600" media="(max-width:600px)">
+            <source srcset="images/photo-montage_1000.jpg" media="(min-width: 601px">
+            <img src="images/photo-montage_600.jpg" alt="Image d'un photo-montage d'une cavalière sur un cheval-autruche. ">
+        </picture>
     </header>
 <main>
+    <h1>Jean-Charles Debroize</h1>
     <h2 class="sous-titre">Les photomanipulations originales de Jean-Charles Debroize</h2>
     <p class="texte">Jean-Charles Debroize est directeur de création chez Kerozen à Rennes,
-        en France. Découvert grâce à son projet de typographie « humaine » qui avait connu
+        en France. Découvert grâce à son projet de typographie «&#8239; humaine &#8239;» qui avait connu
         un grand succès en 2013, Jean-Charles Debroize excelle en photomanipulation en imaginant
         à des créations saisissantes de réalisme. Ses travaux réalisés pour la suite Adobe Creative
         Cloud connaissent un succès retentissant. La poésie des images et leur qualité artistique sait
         mettre en valeur le potentiel créatif des produits Adobe, mais plus que tout, fait valoir
-        l’immense talent de cet artiste!</p>
+        l’immense talent de cet artiste&#8239;!</p>
     <section class="photomontage">
-    <h3 class="section__h3">Passionné d’illustration</h3>
+    <h2>Passionné d’illustration</h2>
         <figure class="figure">
-            <img class="figure__img" src="https://via.placeholder.com/600x380.png">
+            <img src="images/1-ballons_600.jpg" alt="">
             <figcaption class="figure__figcaption">Image « Illustration de ballons sur
                 le concept de l’élévation », © Debroize (1)</figcaption>
         </figure>
         <p class="texte">Passionné par le dessin depuis son plus jeune âge, Debroize intègre en 2003
             une école d’arts appliqués à Rennes en France avec l’ambition de devenir illustrateur.
             Au contact des élèves et des professeurs, il découvre la retouche numérique et commence
-            à créer des œuvres superposant habilement photos et illustrations.
+            à créer des &oelig;uvres superposant habilement photos et illustrations.
         </p>
     </section>
     <section class="photomontage">
         <h3 class="section__h3">Expert en photomontage</h3>
         <figure class="figure">
-            <img class="figure__img" src="https://via.placeholder.com/600x380.png">
-            <figcaption class="figure__figcaption">Image « Enfant pilotant un oiseau» © Debroize, 2016 (2)</figcaption>
+            <img src="images/2-melodie_600.jpg" alt="">
+            <figcaption class="figure__figcaption">Image « Enfant pilotant un oiseau»<br> © Debroize, 2016 (2)</figcaption>
         </figure>
         <p class="texte">Progressivement Debroize se perfectionne sur les logiciels de retouche d’images et développe
             un style bien à lui. Il rejoint le studio Kerozen en tant que Directeur Artistique. Cette petite agence
@@ -72,7 +73,7 @@
     <section class="photomontage">
         <h3 class="section__h3">Une inspiration pour les novices</h3>
         <figure class="figure">
-            <img class="figure__img" src="https://via.placeholder.com/600x380.png">
+            <img src="images/3-ours_600.jpg" alt="">
             <figcaption class="figure__figcaption">Image « Jeune fille chevauchant un ours »,  © Debroize, 2017 (3)</figcaption>
         </figure>
         <p class="texte">Chaque année, Debroize inspire jeunes et moins jeunes à réaliser des photomontages des
@@ -127,8 +128,11 @@
     </ul>
     <p class="footer__p">
         <small class="footer__copyright">Tous droits réservés, © Projet en Techniques d’intégration multimédia
-            (timcsf.ca), Cégep de Sainte-Foy.</small>
+            (timcsf.ca), Cégep de Sainte-Foy.
+        <time>2019</time>
+    </small>
     </p>
 </footer>
+</div>
 </body>
 </html>
