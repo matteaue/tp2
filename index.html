@@ -12,30 +12,33 @@
 <body>
     <div class="layout-page">
     <header class="header">
-        <nav class="nav nav--header">
-                    <a class="logo" href="../index.html"><img class="menu__img" src="images/" alt="logo"></a>
+        <!-- <nav class="nav nav--header">
+                    <a class="logo" href="../index.html">
+                        <img class="menu__img" src="images/logo-final.png" alt="logo">
+                    </a>
                 <ul class="nav__list nav__list--sublist">
-                <li class="nav__item">
-                    <a class="nav__lien" href="#">Articles</a>
+                <li class="nav__listItem">
+                    <a class="nav__link nav__link--active" href="artistes.html">Artistes</a>
                 </li>
-                <li class="nav__item">
-                    <a class="nav__lien" href="#">Blog</a>
+                <li class="nav__listItem">
+                    <a class="nav__link" href="#">Blog</a>
                 </li>
-                <li class="nav__item">
-                    <a class="nav__lien" href="#">Ressources</a>
+                <li class="nav__listItem">
+                    <a class="nav__link" href="#">Ressources</a>
                 </li>
-                <li class="nav__item">
-                    <a class="nav__lien" href="#">À propos</a>
+                <li class="nav__listItem">
+                    <a class="nav__link" href="#">À propos</a>
                 </li>
             </ul>
-        </nav>
+        </nav> -->
         <picture class="picture">
-            <source srcset="images/photo-montage_600" media="(max-width:600px)">
+            <source srcset="images/photo-montage_600.jpg" media="(max-width:600px)">
             <source srcset="images/photo-montage_1000.jpg" media="(min-width: 601px">
             <img src="images/photo-montage_600.jpg" alt="Image d'un photo-montage d'une cavalière sur un cheval-autruche. ">
         </picture>
     </header>
 <main>
+    <div class="introduction">
     <h1>Jean-Charles Debroize</h1>
     <h2 class="sous-titre">Les photomanipulations originales de Jean-Charles Debroize</h2>
     <p class="texte">Jean-Charles Debroize est directeur de création chez Kerozen à Rennes,
@@ -45,7 +48,9 @@
         Cloud connaissent un succès retentissant. La poésie des images et leur qualité artistique sait
         mettre en valeur le potentiel créatif des produits Adobe, mais plus que tout, fait valoir
         l’immense talent de cet artiste&#8239;!</p>
-    <section class="photomontage">
+        </div>
+        <div class="descriptions">
+    <section class="articles">
     <h2>Passionné d’illustration</h2>
         <figure class="figure">
             <img src="images/1-ballons_600.jpg" alt="">
@@ -58,8 +63,8 @@
             à créer des &oelig;uvres superposant habilement photos et illustrations.
         </p>
     </section>
-    <section class="photomontage">
-        <h3 class="section__h3">Expert en photomontage</h3>
+    <section class="articles">
+        <h2>Expert en photomontage</h2>
         <figure class="figure">
             <img src="images/2-melodie_600.jpg" alt="">
             <figcaption class="figure__figcaption">Image « Enfant pilotant un oiseau»<br> © Debroize, 2016 (2)</figcaption>
@@ -70,8 +75,8 @@
             terrifiantes pour lesquelles la maitrise du photomontage est primordiale.
         </p>
     </section>
-    <section class="photomontage">
-        <h3 class="section__h3">Une inspiration pour les novices</h3>
+    <section class="articles">
+        <h2>Une inspiration pour les novices</h2>
         <figure class="figure">
             <img src="images/3-ours_600.jpg" alt="">
             <figcaption class="figure__figcaption">Image « Jeune fille chevauchant un ours »,  © Debroize, 2017 (3)</figcaption>
@@ -83,15 +88,17 @@
             francophone basé au Québec, Canada.
         </p>
     </section>
-    <section class="apprendre-plus">
-        <h2 class="apprendre-plus__h2">Découvrez-en plus sur cet artiste</h2>
+</div>
+<div class="encadres">
+    <section class="encadres__item">
+        <h2 class="encadres-item__h2">Découvrez-en plus sur cet artiste</h2>
         <ul>
-            <li><a class="reseaux__lien" href="https://www.behance.net/jcdebroizea877">Behance</a></li>
-            <li><a class="reseaux__lien" href="http://designspartan.com/presentation/les-photomanipulations-originales-de-jean-charles-debroize/">Design Spartan</a></li>
-            <li><a class="reseaux__lien" href="http://www.studio-kerozen.com/">Studio Kerozen</a></li>
+            <li><a class="encadres-item-reseaux__lien" href="https://www.behance.net/jcdebroizea877">Behance</a></li>
+            <li><a class="encadres-item-reseaux__lien" href="http://designspartan.com/presentation/les-photomanipulations-originales-de-jean-charles-debroize/">Design Spartan</a></li>
+            <li><a class="encadres-item-reseaux__lien" href="http://www.studio-kerozen.com/">Studio Kerozen</a></li>
         </ul>
     </section>
-    <section class="abonnez-vous">
+    <aside class="encadres__item" role="complementary">
         <form class="infolettre__form" method="post" action="traitement.php" id="abonnement">
             <h2 class="abonnez-vous__h2">Abonnez-vous à l'infolettre</h2>
             <p class="texte">Une excellente manière de découvrir un artiste du domaine numérique, chaque semaine!
@@ -99,34 +106,44 @@
             <input class="infolettre__courriel" type="email" id="courriel" value="Inscrire votre courriel" onFocus="javascript:this.value=''">
             <input class="infolettre__bouton" type="submit" value="Envoyer">
         </form>
-    </section>
+    </aside>
+    </div>
 </main>
 <footer>
-    <nav class="nav-footer">
+    <!-- <nav class="nav-footer">
         <ul class="nav-footer__liste">
-            <li class="nav-footer__item">
-                <a class="nav-footer__lien" href="../index.html"><img class="menu__img" src="images/" alt="logo"></a>
+            <li class="nav__listItem">
+                <a class="nav__link" href="../index.html"><img class="menu__img" src="images/" alt="logo"></a>
             </li>
-            <li class="nav-footer__item">
-                <a class="nav-footer__lien" href="#">Articles</a>
+            <li class="nav__listItem">
+                <a class="nav__link" href="#">Articles</a>
             </li>
-            <li class="nav-footer__item">
-                <a class="nav-footer__lien" href="#">Blog</a>
+            <li class="nav__listItem">
+                <a class="nav__link" href="#">Blog</a>
             </li>
-            <li class="nav-footer__item">
-                <a class="nav-footer__lien" href="#">Ressources</a>
+            <li class="nav__listItem">
+                <a class="nav__link" href="#">Ressources</a>
             </li>
-            <li class="nav-footer__item">
-                <a class="nav-footer__lien" href="#">À propos</a>
+            <li class="nav__listItem">
+                <a class="nav__link" href="#">À propos</a>
             </li>
         </ul>
-    </nav>
-    <ul>
-        <li><a class="sources" href="https://www.behance.net/gallery/44848523/Adobe-Creative-Cloud"></a></li>
-        <li><a class="sources" href="https://www.behance.net/gallery/31608315/Mlodies-en-Courts"></a></li>
-        <li><a class="sources" href="https://www.behance.net/gallery/44945511/Adobe-Creative-Cloud"></a></li>
-    </ul>
-    <p class="footer__p">
+    </nav> -->
+<section class="credits">
+    <h2>Sources des images</h2>
+    <ol>
+        <li>Illustration de ballons<br>
+            <a href="https://www.behance.net/gallery/44848523/Adobe-Creative-Cloud"></a>
+        </li>
+        <li>Enfant pilotant un oiseau <br>
+            <a href="https://www.behance.net/gallery/31608315/Mlodies-en-Courts"></a>
+        </li>
+        <li>Jeune fille chevauchant un ours<br>
+            <a href="https://www.behance.net/gallery/44945511/Adobe-Creative-Cloud"></a>
+        </li>
+    </ol>
+    </section>
+    <p class="copyrights">
         <small class="footer__copyright">Tous droits réservés, © Projet en Techniques d’intégration multimédia
             (timcsf.ca), Cégep de Sainte-Foy.
         <time>2019</time>
