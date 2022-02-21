@@ -146,7 +146,6 @@
 }
 /* Mise en forme de la page (Mobile First)
    ========================================================================== */
-
 .introduction h1{
     text-transform: uppercase;
     margin-bottom: 0;
@@ -169,7 +168,7 @@ h1, h2{
 text-align: center;
 }
 .figure{
-   margin:40px; 
+   margin:0;
 }
 .introduction{
     text-align: center;
@@ -201,4 +200,28 @@ text-align: center;
         background-color: #eeeeee;
         padding:1rem;
     }
+}
+@media (min-width:600px){
+    .encadres{
+        display:flex;
+        justify-content:space-between;
+    }
+}
+@media (min-width: 600px){
+    .encadres__item:last-child{
+        margin-left:2rem;
+    }
+}
+footer{
+    background-color:lightgrey;
+    margin: 2rem 0 0;
+}
+
+.credits{
+    padding:0 1rem;
+}
+.copyright{
+    text-align:center;
+    padding-bottom: 2rem;
+    margin-bottom:0;
 }
