@@ -146,6 +146,87 @@
 }
 /* Mise en forme de la page (Mobile First)
    ========================================================================== */
+.nav--header{
+    flex-wrap: wrap;
+}
+.nav--header .nav__list{
+    display:flex;
+}
+.nav{
+    font-family:'News Cycle', sans-serif ;
+    text-transform: uppercase;
+    display: flex;
+}
+.nav__link{
+    display: inline-block;
+    padding: 0.25rem;
+    text-decoration: none;
+}
+.nav__link--active{
+    background-color: #dbe8ec; ;
+}
+.nav__link:hover, .nav--footer
+.nav__link:hover{
+color: orangered;
+}
+
+.logo {
+    flex-grow: 1;
+    text-align: center;
+    transition: all 0.5s;
+}
+.nav--header .nav__list{
+    width: 100%;
+}
+.nav__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+}
+@media (min-width:600px){
+    header{
+       min-height: 433px;
+       background-image: url(../images/photo-montage_1000.jpg);
+       background-position: 0 48px;
+       background-size: contain;
+       background-repeat: no-repeat;
+       font-size: 1.6rem; 
+    }
+}
+@media (min-width:800px){
+    header{
+        background-size: cover;
+    }
+}
+@media (min-width:600px){
+    .nav--header{
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+}
+@media (min-width:600px){
+    .logo{
+        max-width: 250px;
+    }
+}
+@media (min-width: 800px){
+   .logo{
+    max-width: 300px;
+   }
+}
+@media (min-width:600px){
+    header picture{
+        display: none;
+    }
+}
+@media(min-width:600px){
+    .nav__link {
+        padding: 1rem;
+    }
+}
+
+/*CORPS DE LA PAGE*/
 .introduction h1{
     text-transform: uppercase;
     margin-bottom: 0;
@@ -156,6 +237,7 @@ h1, h2{
 
 .layout-page{
     padding:2rem; 
+    background-color: white;
 }
 
 @media(min-width:600px){ 
@@ -177,11 +259,7 @@ text-align: center;
     font-size: 1.6rem;
     text-align: justify;
 }
-/* @media(min-width:600px){
-    .introduction{
-        text-align: center;
-    }
-} */
+
 @media(min-width: 600px){
 .descriptions{
     display:flex;
@@ -212,15 +290,32 @@ text-align: center;
         margin-left:2rem;
     }
 }
+/* FOOTER */
 footer{
     background-color:lightgrey;
     margin: 2rem 0 0;
 }
-
+.nav--footer{
+    background-color: black;
+}
+.nav--footer .nav__link{
+    color: white;
+}
+.nav--footer .nav__link--active{
+    color: orangered;
+}
+.nav--footer .nav__list{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+}
 .credits{
     padding:0 1rem;
 }
-.copyright{
+.copyrights{
     text-align:center;
     padding-bottom: 2rem;
     margin-bottom:0;
